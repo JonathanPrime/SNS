@@ -12,8 +12,8 @@
     <!-- estilos -->
     <link rel="stylesheet" href="views/css/e.css" type="text/css">
   <!--  -->
-  <link rel="manifest" href="/material-components-web-catalog/manifest.json"><link rel="shortcut icon" href="/material-components-web-catalog/static/media/mdc_web_48dp.png">
-  <link href="/material-components-web-catalog/static/css/main.996a751b.css" rel="stylesheet">
+  <!-- <link rel="manifest" href="/material-components-web-catalog/manifest.json"><link rel="shortcut icon" href="/material-components-web-catalog/static/media/mdc_web_48dp.png"> -->
+  <!-- <link href="/material-components-web-catalog/static/css/main.996a751b.css" rel="stylesheet"> -->
 
 </head>
 <body>

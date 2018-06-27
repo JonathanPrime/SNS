@@ -23,66 +23,25 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
     <li class="nav-item">
-        <a class="nav-link  text-white " href="bienvenido.php">Inicio</a>
+        <a class="nav-link  text-white  " href="index.php?action=perfil">Inicio</a>
       </li> 
           <li class="nav-item">
-        <a class="nav-link text-white " href="registro_aprendiz.php">Registar aprendiz</a>
+        <a class="nav-link text-white " href="index.php?action=registros/registrar_aprendiz">Registar aprendiz</a>
       </li> 
       <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle text-white " href="aplazamiento.php" id="navbardrop" data-toggle="dropdown">
-        Aplazamiento
+        Novedades
       </a>
       <div class="dropdown-menu">
-      <a class="dropdown-item text-dark " href="1aplazamiento.php"> Registrar Aplazamiento</a>
-        <a class="dropdown-item text-dark " href="1con.php"> Consultar</a>
-        <a class="dropdown-item text-dark " href="1elim.php">Eliminar</a>
+      <a class="dropdown-item text-dark " href="index.php?action=registros/form_novedades"> Registrar Novedad</a>
+        <a class="dropdown-item text-dark " href="index.php?action=consultar_novedad"> Consultar</a>
       </div>
     </li> 
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle text-white " href="reintegros.php" id="navbardrop" data-toggle="dropdown">
-       Reintegro
-      </a>
-      <div class="dropdown-menu">
-      <a class="dropdown-item text-dark " href="2reintegros.php"> Registrar Reintegro</a>
-        <a class="dropdown-item text-dark " href="2consultar.php"> Consultar</a>
-        <a class="dropdown-item text-dark " href="2eliminar.php">Eliminar</a>
-      </div>
-    </li> 
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle text-white " href="retiro_voluntario.php" id="navbardrop" data-toggle="dropdown">
-        Retiro voluntario
-      </a>
-      <div class="dropdown-menu">
-      <a class="dropdown-item text-dark " href="3retiro_voluntario.php "> Registrar Voluntario</a>
-        <a class="dropdown-item text-dark " href="3consultar.php "> Consultar</a>
-        <a class="dropdown-item text-dark " href="3eliminar.php ">Eliminar</a>
-      </div>
-    </li> 
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle text-white " href="desercion.php" id="navbardrop" data-toggle="dropdown">
-        Desercion
-      </a>
-      <div class="dropdown-menu">
-      <a class="dropdown-item text-dark " href="4desercion.php"> Registrar Deserci&oacute;n</a>
-        <a class="dropdown-item text-dark " href="4consultar.php"> Consultar</a>
-        <a class="dropdown-item text-dark " href="4eliminar.php">Eliminar</a>
-      </div>
-    </li> 
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle text-white " href="traslados.php" id="navbardrop" data-toggle="dropdown">
-        Traslado
-      </a>
-      <div class="dropdown-menu">
-      <a class="dropdown-item text-dark " href="5traslados.php"> Registrar Traslado</a>
-        <a class="dropdown-item text-dark " href="5consultar.php"> Consultar</a>
-        <a class="dropdown-item text-dark " href="5eliminar.php">Eliminar</a>
-      </div>
-    </li> 
-   <li class="nav-item">
-        <a class="nav-link text-white " href="rol.php">Roles</a>
-      </li>
+    
+
+   
     <li class="nav-item">
-        <a class="nav-link text-white " href="salir.php">Salir</a>
+        <a class="nav-link text-white " href="index.php?action=salir">Salir</a>
       </li>  
       
     </ul>

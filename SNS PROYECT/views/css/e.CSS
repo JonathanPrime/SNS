@@ -87,3 +87,6 @@ a {
 nav.navbar-expand-md  {
 	background-color: rgba(41, 23, 1, 0.75);
 } 
+#pai div{
+	display: none;
+}

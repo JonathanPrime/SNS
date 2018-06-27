@@ -4,8 +4,21 @@ if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(valor)) ) {
   return false;
 }
 </script>-->
+
 <div id="main">
     <div class="container">
+      <br>
+      <?php
+
+$registro = new MvcController();
+$registro -> registroUsuarioController();
+if(isset($_GET["action"])){
+
+  if ($_GET["action"]=="ok") {
+      echo"registro exitoso";
+  }
+}
+?>
     	<br>
         <h3 class="">Regístrate</h3>
         	<br>
@@ -42,14 +55,3 @@ if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(valor)) ) {
     </div>  
 </div>
 <br><br>
-<?php
-
-$registro = new MvcController();
-$registro -> registroUsuarioController();
-if(isset($_GET["action"])){
-
-  if ($_GET["action"]=="ok") {
-      echo"registro exitoso";
-  }
-}
-?>

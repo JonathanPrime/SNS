@@ -1,6 +1,17 @@
 <br><br>
 <div id="main">
       <div class="container">
+        <br>
+        <?php 
+      $ingreso = new MvcController();
+      $ingreso -> ingresoUsuarioController();
+      if(isset($_GET["action"])){
+
+      if ($_GET["action"]=="ok") {
+          echo"registro exitoso";
+      }
+      }
+    ?>
        <br>
         <div id="slider-home" class="carousel slide" data-ride="carousel">
       <div id="de" class="carousel slide" data-ride="carousel">
@@ -53,7 +64,7 @@
 
      <!-- formulario -->
      <form method="POST">
-       <!-- <div id="dem" class="collapse"> -->
+       <div id="dem" class="collapse"> 
      <div class="container">
       <div class="form-group">
       <label for="usr">numero de documento </label>
@@ -75,20 +86,11 @@
      <br>
    </div>
    <center>
-   <!-- <button  type="button" class="btn btn-dark" data-toggle="collapse" data-target="#dem" >Ingresar</button> -->
+    <button  type="button" class="btn btn-dark" data-toggle="collapse" data-target="#dem" >Ingresar</button> 
    <br>
         </center>
         <br><br>
  </div>
     <br>     
 
-    <?php 
-      $ingreso = new MvcController();
-      $ingreso -> ingresoUsuarioController();
-      if(isset($_GET["action"])){
-
-      if ($_GET["action"]=="ok") {
-          echo"registro exitoso";
-      }
-      }
-    ?>
+    

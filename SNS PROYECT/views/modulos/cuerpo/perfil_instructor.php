@@ -13,31 +13,46 @@
 			    <tr>
 			      <th scope="row">Nombre</th>
 			      <td>
-			      	Jeison Torres
+			      	<?php
+			      		echo $_SESSION["n"]." ". $_SESSION["a"];
+			      	?>
 			      </td>
 			    </tr>
 			    <tr>
 			      <th scope="row">Documento</th>
 			      <td>
-			      	102046541
+			      	<?php  echo $_SESSION["documento"]; ?>
 			      </td>
 			    </tr>
 			    <tr>
 			      <th scope="row">Tipo de Documento</th>
 			      <td>
-			      	Cedula de Ciudadania
+			      	<?php  
+			      	if($_SESSION["tidocumento"]=="1"){
+			      		echo "Cédula de ciudadania";
+			      	}else if($_SESSION["tidocumento"]=="2"){
+			      		echo "tarjeta de identidad";
+			      	}
+			      	else if($_SESSION["tidocumento"]=="3"){
+			      		echo "Cédula extranjera";
+			      	}
+			      	else if($_SESSION["tidocumento"]=="4"){
+			      		echo "Pasaporte";
+			      	}
+
+			      	?>
 			      </td>
 			    </tr>
 			    <tr>
 			      <th scope="row">Correo</th>
 			      <td>
-			      	estedospuntos@gmail.com
+			      	<?php  echo $_SESSION["c"]; ?>
 			      </td>
 			    </tr>
 				<tr>
 			      <th scope="row">Rol</th>
 			      <td>
-			      	Instructor
+					<?php echo $_SESSION["r"]; ?>			      	
 			      </td>
 			    </tr>
 			  </tbody>
@@ -50,7 +65,7 @@
 				      <a class="nav-link" href="#">Cambiar Contraseña</a>
 				    </li>
 				    <li class="nav-item">
-				      <a class="nav-link" href="#">Consultar Aprendiz</a>
+				      <a class="nav-link" href="index.php?action=consulta_aprendizi">Consultar Aprendiz</a>
 				    </li>				    
 				  </ul>
 				</nav>

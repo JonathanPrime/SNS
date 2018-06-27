@@ -1,16 +1,28 @@
 <div id="main">
     <div class="container">
     	<br>
-        <h3 class="">Eliminar novedad</h3>
+      <?php
+
+        $registro = new MvcController();
+        $registro -> consultaNovedadController();
+        if(isset($_GET["action"])){
+
+          if ($_GET["action"]=="ok") {
+              echo"registro exitoso";
+          }
+        }
+        ?>
+        <br>
+        <h3 class="">Consultar novedad</h3>
         	<br>
         	<form method="post">
             <label>Seleccione novedad</label>
-              <select class="form-control" name="select" id="select">
+              <select class="form-control" name="novedad" id="novedad">
                 <option disabled="">--Seleccione opcion--</option>
                 <option value="aplazamientos">Aplazamiento</option>
-                <option value="Cambio_de_jornada">Cambio de jornada</option>
+                <option value="cambio_de_jornada">Cambio de jornada</option>
                 <option value="deserciones">Desercion</option>
-                <option value="Reintegro">Reintegro</option>
+                <option value="reintegro">Reintegro</option>
                 <option value="retiro_voluntario">Retiro voluntario</option>
                 <option value="traslado">Traslado</option>
               </select>
@@ -30,21 +42,10 @@
      			 	<!-- <label for="usr">Confirme Contraseña</label>
      			 	<input type="password" class="form-control" name="contra1"autocomplete="off" required> -->
 	   			</div>
-	   			<center> <button type="submit" class="btn btn-info">Eliminar</button>
+	   			<center> <button type="submit" class="btn btn-info">Registrar</button>
 	   			</center>
         	</form>                             
         <br><br>                           
     </div>  
 </div>
 <br><br>
-<?php
-
-$registro = new MvcController();
-$registro -> registroUsuarioController();
-if(isset($_GET["action"])){
-
-  if ($_GET["action"]=="ok") {
-      echo"registro exitoso";
-  }
-}
-?>
