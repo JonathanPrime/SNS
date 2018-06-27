@@ -1,7 +1,7 @@
 <div id="main">
     <div class="container">
     	<br>
-        <h3 class="">Retiros voluntarios</h3>
+        <h3 class="">Retiro voluntario</h3>
         	<br>
         	<form name="form1" method="post" action="regusuario.php">
         		<div class="form-group">

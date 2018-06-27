@@ -1,7 +1,7 @@
 <div id="main">
     <div class="container">
     	<br>
-        <h3 class="">Reintegros</h3>
+        <h3 class="">Reintegro</h3>
         	<br>
         	<form name="form1" method="post" action="regusuario.php">
         		<div class="form-group">

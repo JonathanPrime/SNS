@@ -8,6 +8,7 @@
 	      			<label for="usr">Documento del aprendiz</label>
 	      			<input type="text" class="form-control" name="documentos" autocomplete="off" required>
 	      			<label for="usr">Tipo de documento</label>
+            <label>Tipo de Documento</label>
               <select class="form-control" name="tidoc">
                 <option>Cédula de Ciudadania</option>
                 <option>Tarjeta de Identidad</option>

@@ -1,4 +1,4 @@
-<div id="main">
+﻿<div id="main">
 	<div class="container">
 		<h2><center>Perfil Apoyo de Administracion</h2>	
 		<div class="row">
@@ -44,7 +44,8 @@
 			</table>	
 			</div>
 			<div class="col-md-8">
-				<nav class="navbar navbar-expand-sm bg-light navbar-secondary" align="center">
+				<div class="container">
+					<nav class="navbar navbar-expand-sm bg-light navbar-secondary" align="center">
 				  <ul class="navbar-nav">
 				    <li class="nav-item active">
 				      <a class="nav-link" href="#">Cambiar Contraseña</a>
@@ -61,6 +62,7 @@
 				  </ul>
 				</nav>
 				<center>En esta pagina podras cambiar tus datos personales o actualizar los datos de los aprendices que esten registrados en el sistema
+				</div>
 
 			</div>
 		</div>

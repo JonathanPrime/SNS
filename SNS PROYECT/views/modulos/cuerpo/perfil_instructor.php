@@ -1,4 +1,4 @@
-<div id="main">
+﻿<div id="main">
 	<div class="container">
 		<h2><center>Perfil Instructor</h2>	
 		<div class="row">

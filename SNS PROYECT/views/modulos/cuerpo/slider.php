@@ -52,32 +52,43 @@
     <h2 align="center">Iniciar Sesión</h2>
 
      <!-- formulario -->
-     <form>
-       <div id="dem" class="collapse">
+     <form method="POST">
+       <!-- <div id="dem" class="collapse"> -->
      <div class="container">
       <div class="form-group">
-        <label>Tipo de Documento</label>
-              <select class="form-control" name="tidoc">
-                <option>Cédula de Ciudadania</option>
-                <option>Tarjeta de Identidad</option>
-                <option>Cédula de Extranjeria</option>
-                <option>Pasaporte</option>
-              </select>
       <label for="usr">numero de documento </label>
-      <input type="text" class="form-control" name="pn" autocomplete="off" required>
+      <input type="text" class="form-control" name="ndl" autocomplete="off" required>
+      <label>Tipo de Documento</label>
+              <select class="form-control" name="tidocl">
+                <option value="1">Cédula de Ciudadania</option>
+                <option value="2">Tarjeta de Identidad</option>
+                <option value="3">Cédula de Extranjeria</option>
+                <option value="4">Pasaporte</option>
+              </select>
       <label for="usr">contraseña</label>
-      <input type="password" class="form-control" name="sn"autocomplete="off" >
+      <input type="password" class="form-control" name="contral"autocomplete="off" >
     </div> 
+    <button type="submit" class="btn btn-info">Iniciar Sesión</button>
     </form>      
-    <button  type="button" class="btn btn-primary" data-toggle="collapse" data-target="#dem" >Iniciar sesion</button>
+    
      </div>
      <br>
    </div>
    <center>
-   <button  type="button" class="btn btn-dark" data-toggle="collapse" data-target="#dem" >Ingresar</button>
+   <!-- <button  type="button" class="btn btn-dark" data-toggle="collapse" data-target="#dem" >Ingresar</button> -->
    <br>
         </center>
         <br><br>
  </div>
- <br><br><br>
-    
+    <br>     
+
+    <?php 
+      $ingreso = new MvcController();
+      $ingreso -> ingresoUsuarioController();
+      if(isset($_GET["action"])){
+
+      if ($_GET["action"]=="ok") {
+          echo"registro exitoso";
+      }
+      }
+    ?>

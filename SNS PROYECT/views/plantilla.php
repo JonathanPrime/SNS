@@ -14,6 +14,7 @@
   <!--  -->
   <link rel="manifest" href="/material-components-web-catalog/manifest.json"><link rel="shortcut icon" href="/material-components-web-catalog/static/media/mdc_web_48dp.png">
   <link href="/material-components-web-catalog/static/css/main.996a751b.css" rel="stylesheet">
+
 </head>
 <body>
   <?php
@@ -25,5 +26,8 @@
     //footer
     include ('modulos/cuerpo/footer.php');
   ?>
+
+<script type="text/javascript" src="views/js/jquery.js"></script>
+<script type="text/javascript" src="views/js/javas.js"></script>
 </body>
 </html>

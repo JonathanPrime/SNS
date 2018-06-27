@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-md-4">
 			<table class="table">
-			  <thead class="thead-dark">
+			  <thead class="thead-dark ">
 			    <tr>
 			      <th scope="col" colspan="2"><center>Datos</th>
 			    </tr>
@@ -64,4 +64,3 @@
 
 	</div>
 </div>
-	
